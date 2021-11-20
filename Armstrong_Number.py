@@ -18,8 +18,8 @@ Sample inputs       	    Outputs
 5	                        5 is an Armstrong number
 -153	                    It is an invalid entry. Don't use non-numeric, float, or negative values!
 153.87 or 153,87	        It is an invalid entry. Don't use non-numeric, float, or negative values!
-one	                    It is an invalid entry. Don't use non-numeric, float, or negative values!
-121	                    121 is not an Armstrong number
+one	                        It is an invalid entry. Don't use non-numeric, float, or negative values!
+121	                        121 is not an Armstrong number
 
 """
 
