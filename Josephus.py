@@ -21,6 +21,7 @@ josephus([1,2,3,4,5,6,7],3)==[3,6,2,7,5,1,4]
 """
 
 def josephus(liste, n) :
+    liste = [i for i in range(1, liste+1)]
     indeks, output = 0 , []
     uzunluk = len(liste)
     while len(liste) > 0 :
