@@ -25,7 +25,7 @@ def josephus(liste, n) :
     indeks, output = 0 , []
     uzunluk = len(liste)
     while len(liste) > 0 :
-        indeks = (2 + indeks) % uzunluk
+        indeks = (n-1 + indeks) % uzunluk
         output += [liste.pop(indeks)]
         uzunluk -= 1
     return output
