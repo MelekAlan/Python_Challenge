@@ -12,6 +12,6 @@ Output: gvO Ujnft!
 import string
 lower = string.ascii_lowercase
 vowel = "aeiou"
-letter = "hello*3"
+letter = input("")
 new_s = "".join([lower[(lower.index(i) + 1) % len(lower)] if i in lower else i for i in letter])
 print("".join([i.upper() if i in vowel else i for i in new_s]))
