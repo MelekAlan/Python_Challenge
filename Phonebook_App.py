@@ -73,7 +73,7 @@ Exiting Phonebook
 
 
 nums = ["1", "2", "3", "4"]
-phone_nums = {"Alex":1234}
+phone_nums = {}
 while True :
     app = input("""Welcome to the phonebook application
 1. Find phone number
@@ -89,7 +89,11 @@ Select operation on Phonebook App (1/2/3) : """ )
             break
         elif app == "3" :
             delete = input("Whom to delete from phonebook : ")
-            print("{} is deleted from the phonebook".format(delete))
+            if delete in phone_nums :
+                print("{} is deleted from the phonebook".format(delete))
+                del phone_nums[delete]
+            else :
+                print("{} is not exist the phonebook")
         elif app == "1" :
             find = input("Find the number of : ")
             if find in phone_nums :
