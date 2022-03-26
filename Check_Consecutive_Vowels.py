@@ -22,11 +22,4 @@ Negative
 vowels = list("aeiou")
 string = input("Please enter a string: ")
 
-new_vowels = "".join([i for i in string if i in vowels])
-
-if all([ord(new_vowels[i]) - ord(new_vowels[i+1]) < 0 for i in range(len(new_vowels) -1)]) == True and len(new_vowels) > 1 :
-    print("Positive")
-else :
-    print("Negative")
-
 
